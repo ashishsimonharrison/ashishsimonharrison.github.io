@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
-<body>
-<object width="100%" height="100%" data="Ashish Harrison Resume.pdf"></object>
-</body>
+   <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js" integrity="sha512-g16L6hyoieygYYZrtuzScNFXrrbJo/lj9+1AYsw+0CYYYZ6lx5J3x9Yyzsm+D37/7jMIGh0fDqdvyYkNWbuYuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <style>
+         .pdfobject-container { height: 800px; }
+      </style>
+   </head>
+   <body>
+      <div id="resume"></div>
+   </body>
+   <script>
+      PDFObject.embed("resume.pdf", "#resume");
+   </script>
 </html>
